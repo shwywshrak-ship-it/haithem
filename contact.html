@@ -259,21 +259,22 @@
 
   <!-- ✅ Form -->
   <div class="form-container">
-    <form
-  action="https://formspree.io/f/xeogzdwz"
+   <!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xzzybobz"
   method="POST"
 >
-      <label for="name">الاسم الكامل</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">البريد الإلكتروني</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">الرسالة</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">إرسال الرسالة ✉️</button>
-    </form>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
   </div>
 
   <!-- ✅ Social Media -->
@@ -291,7 +292,7 @@
 <script>
   const toggleBtn = document.getElementById("toggle-dark");
   const html = document.documentElement;
-
+   
   // تفعيل الوضع المخزن سابقًا تلقائيًا
   if (localStorage.getItem("haithem-mode") === "dark") {
     html.classList.add("dark-mode");
@@ -309,3 +310,4 @@
 <button id="toggle-dark" class="dark-mode-toggle" title="تبديل الوضع">🌙</button>
 </body>
 </html>
+
